@@ -1,5 +1,10 @@
 ## A Cheat Sheet for Git Commands 
 
+- [Install Git](#Install-Git)
+- [Git Terminologies](#Git-Terminologies)
+
+
+
 <hr>
 
 ### Install Git
