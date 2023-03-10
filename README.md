@@ -2,6 +2,8 @@
 
 - [Install Git](#Install-Git)
 - [Git Terminologies](#Git-Terminologies)
+- [Git Configuration](#Git-Configuration)
+- [Set Up a Git Repository](#Set-Up-a-Git-Repository)
 
 
 
@@ -42,7 +44,7 @@ sudo apt install git
 
 <hr>
 
-## Configuration
+## Git Configuration
 | Command | Description |
 | - | - |
 | git config --global user.name `"Your Name"`|Set the username to be used for all actions |
