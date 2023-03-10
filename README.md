@@ -45,7 +45,7 @@ sudo apt install git
 <hr>
 
 ## Git Configuration
-| Command | Description |
+| Git Command | Description |
 | - | - |
 | git config --global user.name `"Your Name"`|Set the username to be used for all actions |
 | git config --global user.email `"Your email"` | Set the email to be used for all the actions. |
@@ -57,7 +57,7 @@ sudo apt install git
 <hr>
 
 ## Set Up a Git Repository
-| Command | Description |
+| Git Command | Description |
 | - | - |
 | git init | Initialize an empty Git repo in the current project. |
 | git clone (Repo URL) | Clone the repository from GitHub to the project folder. |
@@ -69,6 +69,37 @@ sudo apt install git
 | git remote set-url origin (git URL) | Changes the URL of the repository. |
 | git fetch | Get the latest changes from the origin but not merge. |
 | git pull | Get the latest changes from the origin and merge them. |
+
+
+
+<hr>
+
+## Local File Changes
+| Git Command | Description |
+| - | - |
+| git add (file name) | Add the current changes to the file to staging.  |
+| git add . | Add the whole directory changes to staging (no delete files). |
+| git add -A | Add all new, modified and deleted files to staging. |
+| git rm (file_name) | Removes the file and untracks (stop tracking) it. |
+| git mv  (file_name) (new_file_name) | Changes the filename and prepare it for Commit. |
+| git checkout <deleted file name> | Recovers the deleted file and prepares it for Commit |
+| git status | Shows the status of the modified files. |
+| git ls-files –other –ignored –exclude-standard | Shows the list of all ignored files. |
+| git diff | Shows unstaged changes in the index and the working directory. |
+| git diff –staged | Shows file differences between staging and the last file version. |
+| git diff (file_name) | Shows changes in a single file compared to the last Commit. |
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
