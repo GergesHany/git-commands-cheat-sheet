@@ -5,6 +5,8 @@
 - [Git Configuration](#Git-Configuration)
 - [Set Up a Git Repository](#Set-Up-a-Git-Repository)
 - [Local File Changes](#Local-File-Changes)
+- [Declare Commits](#Declare-Commits)
+- [Branching](#Branching)
 
 
 
@@ -91,24 +93,48 @@ sudo apt install git
 | git diff (file_name) | Shows changes in a single file compared to the last Commit. |
 
 
+## Declare Commits
+| Git Command | Description |
+| - | - |
+| git commit -m “(message)” | Commit the changes with a message |
+| git commit -am “(message)” | Add all changes to staging and commit them with message |
+| git checkout <commit hash> | Switch to the provided commit |
+| git show <commit hash> | Outputs metadata and content changes of the specified commit |
+| git reset <commit hash> | Undo all commits after this commit. Preserving changes locally |
+| git reset --hard <commit hash> | Discard all history and changes back to the given commit |
+| git reset --hard Head | Discard all local changes in working directory |
+| git log | Show history of changes |
+| git log -p | Shows the full display of each commit |
+| git log -oneline | Shows the list of commits with only message |
+| git log --follow (file_name) | List all the history for the current file |
+| git blame (file_name) | Shows all changes with name of user |
+| git stash | Temporarily saves all modified tracked files |
+| git stash pop | Restores the most recently stashed files |
+| git stash list | List all stash changedsets |
+| git stash apply | Apply the latest stashed contents |
+| git stash drop | Discard the most recently stashed files |
+| git stash apply (stash id) | Re-Apply a specific stash content by ID |
+| git stash drop (stash_id) | Drop a specific stash content by ID |
+| git push | Push changes to the Origin |
+| git push origin (branch_name) | Push branch to the Origin |
+| Git push -f origin (branch_name) | Force push the changes to the origin |
+| git tag (tag_name) | Define tag for a version |
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
+## Branching
+| Git Command | Description |
+| - | - |
+| git branch | Shows the list of all branches |
+| git branch <branch_name> | Create a new branch |
+| git branch -a | List all branches local and remote |
+| git branch -m <old_name> <new_name> | Rename the branch |
+| git checkout -b <branch_name> | Create a branch and switch to it |
+| git checkout -b <new_branch_name> origin/<branch_name> | Get a remote branch from origin to the local directory |
+| git branch -d <branch_name> | Delete a specified branch |
+| git merge <branch_name> | Merge the current branch into master(first checkout to master) |
+| git rebase <branch_name> | Take all the changes of the branch and restate on other. |
+| git rebase <base> | Rebase the current branch onto base. Base can be a commit ID or branch name. |
+| git fetch remote <branch_name> | Fetches the specific branch from the repository |
+| git diff <branch_name>..<branch_name> | Shows the differences of two branches |
+| git pull --rebase | Fetch the remote’s copy of current branch and rebases it into the local copy |
+| git push --all | Push all of your local branches to the specified remote |  
