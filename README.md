@@ -27,7 +27,7 @@ sudo apt install git
 ## Git Terminologies
 | Git Command | Description |
 | - | - |
-| Bare Repository | A branch is an active area of development in Git. The most recent commit shows the tip of the branch. |
+| Bare Repository    | A branch is an active area of development in Git. The most recent commit shows the tip of the branch. |
 | Branch | A branch is an active area of development in Git. The most recent commit shows the tip of the branch. |
 | Blame | Describes the last modification to every line in the file. Shows Revision, Author & Time. |
 | Checkout | This refers to the process in which any given commit is selected from the repository and the state of the associated file and the directory tree is recreated in the working directory. |
@@ -50,8 +50,8 @@ sudo apt install git
 ## Git Configuration
 | Git Command | Description |
 | - | - |
-| git config --global user.name `"Your Name"`|Set the username to be used for all actions |
-| git config --global user.email `"Your email"` | Set the email to be used for all the actions. |
+| git config --global user.name `"Your Name"`    |  Set the username to be used for all actions |
+| git config --global user.email `"Your email"`   | Set the email to be used for all the actions. |
 | git config –global alias. | Create a shortcut for the Git command. |
 | git config –system core.editor | Set the text editor for all the command actions. |
 | git config –global –edit | Open global configuration file in the text editor for manual editing. |
@@ -92,6 +92,7 @@ sudo apt install git
 | git diff –staged | Shows file differences between staging and the last file version. |
 | git diff (file_name) | Shows changes in a single file compared to the last Commit. |
 
+<hr>
 
 ## Declare Commits
 | Git Command | Description |
@@ -120,6 +121,7 @@ sudo apt install git
 | Git push -f origin (branch_name) | Force push the changes to the origin |
 | git tag (tag_name) | Define tag for a version |
 
+<hr>  
   
 ## Branching
 | Git Command | Description |
