@@ -4,6 +4,7 @@
 - [Git Terminologies](#Git-Terminologies)
 - [Git Configuration](#Git-Configuration)
 - [Set Up a Git Repository](#Set-Up-a-Git-Repository)
+- [Local File Changes](#Local-File-Changes)
 
 
 
