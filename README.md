@@ -8,6 +8,8 @@
 
 <hr>
 
+## Content
+
 - [Install Git](#Install-Git)
 - [Git Terminologies](#Git-Terminologies)
 - [Git Configuration](#Git-Configuration)
