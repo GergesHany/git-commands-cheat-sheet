@@ -142,7 +142,7 @@ sudo apt install git
 | git branch -m <old_name> <new_name> | Rename the branch |
 | git checkout -b <branch_name> | Create a branch and switch to it |
 | git checkout -b <new_branch_name> origin/<branch_name> | Get a remote branch from origin to the local directory |
-| git branch -d <branch_name> | Delete a specified branch |
+| git branch -D <branch_name> | Delete a specified branch |
 | git merge <branch_name> | Merge the current branch into master(first checkout to master) |
 | git rebase <branch_name> | Take all the changes of the branch and restate on other. |
 | git rebase <base> | Rebase the current branch onto base. Base can be a commit ID or branch name. |
