@@ -17,6 +17,7 @@
 - [Local File Changes](#Local-File-Changes)
 - [Declare Commits](#Declare-Commits)
 - [Branching](#Branching)
+- [Stash](Stash)
 
 
 
@@ -150,3 +151,39 @@ sudo apt install git
 | git diff <branch_name>..<branch_name> | Shows the differences of two branches |
 | git pull --rebase | Fetch the remote’s copy of current branch and rebases it into the local copy |
 | git push --all | Push all of your local branches to the specified remote |  
+
+<hr> <hr>
+
+## Stash
+
+### Stash the changes 
+1. `git stash` 
+2.  `git stash save`
+### Stash the untracked files 
+1. `git stash --include-untracked` 
+1. `git stash -u`
+### List the stashes
+1. `git stash list`
+### show the latest stash
+1. `git stash show`
+1. `git stash show -p`
+1. `git stash show -u`
+1. `git stash show --include-untracked`
+1. `git stash show -p -u`
+1. `git stash show -p --only-untracked`
+### Show the individual stash
+1. `git stash show stash@{1}`
+1. `git stash show stash@{1} -p`
+1. `git stash show stash@{1} -u`
+1. `git stash show stash@{1} --include-untracked`
+1. `git stash show stash@{1} --only-untracked`
+### Apply the stash
+1. `git stash pop`
+1. `git stash apply`
+1. `git stash apply stash@{1}`
+### Delete the stash
+1. `git stash clear`
+1. `git stash drop stash@{2}`
+### Create branch from stash
+1. `git stash branch <branch_name>`
+1. `git stash branch <branch_name> stash@{revision}`
