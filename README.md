@@ -26,6 +26,9 @@
 
 ### Install Git
 
+<hr>
+
+### Linux users
 Open your terminal and run these commands
 
 ```bash
@@ -34,19 +37,26 @@ sudo apt upgrade
 sudo apt install git
 ```
 
+<br>
+
+# Windows users
+- [Installing](https://git-scm.com/downloads)
+
 <hr>
 
 ## Git Terminologies
 | Git Command | Description |
 | - | - |
-| Bare Repository    | A branch is an active area of development in Git. The most recent commit shows the tip of the branch. |
+| Bare Repository    | Repository without working directory |
 | Branch | A branch is an active area of development in Git. The most recent commit shows the tip of the branch. |
 | Blame | Describes the last modification to every line in the file. Shows Revision, Author & Time. |
 | Checkout | This refers to the process in which any given commit is selected from the repository and the state of the associated file and the directory tree is recreated in the working directory. |
 | Commit | This is a single point in Git history which holds the information about a changeset. |
-| Detached Head | The state in which a specific commit is checked out instead of a branch. |
+| diff | A diff is the difference in changes between two commits, or saved changes |
+| Detached Head | This exact state - when a specific commit is checked out instead of a branch - is what's called a "detached HEAD" |
 | Fetch | Fetching means to get latest changes in the branch and the local/remote repos. |
-| Hash | A named reference to the Commit at the tip of a Branch |
+| Fork | By forking the repository you will be able to add commits and create Pull Requests |
+| Hash | A unique SHA1 code for every commit |
 | Head | A named reference to the Commit at the tip of a Branch |
 | Index | A collection of files with state information. |
 | Merge | To bring out the content of another Branch in the current Branch. |
@@ -64,8 +74,8 @@ sudo apt install git
 | - | - |
 | git config --global user.name `"Your Name"`    |  Set the username to be used for all actions |
 | git config --global user.email `"Your email"`   | Set the email to be used for all the actions. |
-| git config –global alias. | Create a shortcut for the Git command. |
-| git config –system core.editor | Set the text editor for all the command actions. |
+| git config --global alias.< alias-name >< git-command > | Create a shortcut for the Git command. |
+| git config --system core.editor < editor > | Set the text editor for all the command actions. |
 | git config –global –edit | Open global configuration file in the text editor for manual editing. |
 | git config –global color.ui auto | Enable helpful colourization of command line outputs. |
 
@@ -97,7 +107,7 @@ sudo apt install git
 | git add -A | Add all new, modified and deleted files to staging. |
 | git rm (file_name) | Removes the file and untracks (stop tracking) it. |
 | git mv  (file_name) (new_file_name) | Changes the filename and prepare it for Commit. |
-| git checkout <deleted file name> | Recovers the deleted file and prepares it for Commit |
+| git checkout < deleted file name > | Recovers the deleted file and prepares it for Commit |
 | git status | Shows the status of the modified files. |
 | git ls-files –other –ignored –exclude-standard | Shows the list of all ignored files. |
 | git diff | Shows unstaged changes in the index and the working directory. |
@@ -111,10 +121,10 @@ sudo apt install git
 | - | - |
 | git commit -m “(message)” | Commit the changes with a message |
 | git commit -am “(message)” | Add all changes to staging and commit them with message |
-| git checkout <commit hash> | Switch to the provided commit |
-| git show <commit hash> | Outputs metadata and content changes of the specified commit |
-| git reset <commit hash> | Undo all commits after this commit. Preserving changes locally |
-| git reset --hard <commit hash> | Discard all history and changes back to the given commit |
+| git checkout < commit hash> | Switch to the provided commit |
+| git show < commit hash> | Outputs metadata and content changes of the specified commit |
+| git reset < commit hash> | Undo all commits after this commit. Preserving changes locally |
+| git reset --hard < commit hash> | Discard all history and changes back to the given commit |
 | git reset --hard Head | Discard all local changes in working directory |
 | git log | Show history of changes |
 | git log -p | Shows the full display of each commit |
