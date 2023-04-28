@@ -39,7 +39,7 @@ sudo apt install git
 
 <br>
 
-# Windows users
+### Windows users
 - [Installing](https://git-scm.com/downloads)
 
 <hr>
