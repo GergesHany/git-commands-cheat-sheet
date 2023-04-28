@@ -152,7 +152,7 @@ sudo apt install git
 | git pull --rebase | Fetch the remote’s copy of current branch and rebases it into the local copy |
 | git push --all | Push all of your local branches to the specified remote |  
 
-<hr> <hr>
+<br> <hr>
 
 ## Stash
 
