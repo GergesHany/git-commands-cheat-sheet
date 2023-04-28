@@ -17,7 +17,7 @@
 - [Local File Changes](#Local-File-Changes)
 - [Declare Commits](#Declare-Commits)
 - [Branching](#Branching)
-- [Stash](Stash)
+- [Stash](#Stash)
 
 
 
