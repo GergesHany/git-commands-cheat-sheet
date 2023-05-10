@@ -3,9 +3,10 @@
 
 ## sessions to learn git
 
-- [Ahmed Hossam](https://www.youtube.com/watch?v=Dty7VkzHvbI&t=369s)
-- [Ahmed Sami](https://www.youtube.com/watch?v=Q6G-J54vgKc&t=5425s)
 - [Mosh](https://www.youtube.com/watch?v=8JJ101D3knE)
+- [Ahmed Sami](https://www.youtube.com/watch?v=Q6G-J54vgKc&t=5425s)
+- [Ahmed Hossam](https://www.youtube.com/watch?v=Dty7VkzHvbI&t=369s)
+- [Introduction to Git and GitHub coursera course](https://www.coursera.org/learn/introduction-git-github/home/week/1)
 
 <hr>
 
